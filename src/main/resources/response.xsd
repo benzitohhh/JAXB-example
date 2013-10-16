@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema
+	targetNamespace="http://response.generated.jaxb.exampledriven.org"
+	          xmlns="http://response.generated.jaxb.exampledriven.org"
+	       xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	       xmlns:ct="http://contact.generated.jaxb.exampledriven.org">
+
+	<xs:import
+		schemaLocation="contact.xsd"
+		     namespace="http://contact.generated.jaxb.exampledriven.org"/>
+
+	<xs:element name="response">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ct:contacts"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

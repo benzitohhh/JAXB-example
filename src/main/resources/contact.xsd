@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema targetNamespace="http://contact.generated.jaxb.exampledriven.org"
+	xmlns="http://contact.generated.jaxb.exampledriven.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="email">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute type="xs:string" name="type" use="optional" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element type="xs:string" name="firstname" />
+
+	<xs:element type="xs:string" name="lastname" />
+
+	<xs:element name="contact">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="firstname" />
+				<xs:element ref="lastname" />
+				<xs:sequence>
+					<xs:element ref="email" maxOccurs="unbounded" />
+				</xs:sequence>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="contacts">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="contact" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
