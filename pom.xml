@@ -5,11 +5,7 @@
 	<artifactId>JAXB-example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-<<<<<<< HEAD
-	<name>JAXB example and a nother change</name>
-=======
 	<name>JAXB example</name>
->>>>>>> parent of 033f0e0... Update pom.xml
 
 	<properties>
 		<slf4j.version>1.6.1</slf4j.version>
